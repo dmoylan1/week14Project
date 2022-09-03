@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import './index.css';
 import App from './App';
-import StarsContainer from './components/stars-container';
+import ReviewList from './components/review-list';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <StarsContainer />, 
+  <ReviewList />, 
 );
 
 
