@@ -5,10 +5,11 @@ import './index.css';
 import App from './App';
 import ReviewList from './components/review-list';
 import reportWebVitals from './reportWebVitals';
+import MovieList from './components/movie-list';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <ReviewList />, 
+  <MovieList />,
 );
 
 

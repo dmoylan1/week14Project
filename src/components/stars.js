@@ -13,7 +13,7 @@ handleClick() {
     render() {
         return (
             <button
-                className="btn btn-primary"
+                className="btn w-50 btn-primary"
                 onClick= {this.handleClick}>
                 {this.props.name} {this.props.count}
             </button>

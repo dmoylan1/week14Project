@@ -1,31 +1,31 @@
 import React from 'react';
-import Post from './post';
+import Movie from './movie';
 
-let e = React.createElement;
 
-export default class NewsFeed extends React.Component {
+export default class MovieList extends React.Component {
     render() {
-      let comments = [
+     
+      let reviews = [
         {
-        name: 'Bambi',
-        release: '8-21-1942',
-        synopsis: 'A young deer named Bambi joins with his friends to explore their forest home.'
+        content: 'Best movie of the year!',
+        username: 'Rotten Tomatoes',
+        date: '4-24-1979'
       },
       { 
-        name: 'Beauty and the Beast',
-        release: '11-22-1991',
-        synopsis: 'A beautiful young girl is taken captive by a horrible beast. She falls in love with him and breaks the curse afer getting to know the real him.'
+        content: 'Simply amazing.',
+        username: 'Critiques',
+        date: '11-06-2014'
       },
       {
-        name: 'Lion King',
-        release: '6-24-1994',
-        synopsis: 'After losing his father in a tragic way, a young lion returns home to save his land and his people.'
+        content: 'A classic for sure',
+        username: 'Steven Spealburg',
+        date: '9-25-2017'
       }
       ];
       return (
         <div className="container">
-          <Movie {...{comments: comments, content: 'This is my post content!'}}/>
-          <Movie {...{name: 'Another one dude!'}}/>
+          <Movie {...{review: reviews}}/>
+          <Movie />
           <Movie />
         </div>
       );
